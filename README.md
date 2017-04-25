@@ -27,10 +27,12 @@ Strategy: // comments include some of the problems that I ran into as well as fe
     // so the font 'Segoe Ui'...is MicroSoft, I didn't bother to try to download it on linux, hope this isn't part of the test :p
     
 7.testing
+    // fixed couple naming errors
 
 8.run elint to clean up code
 
 9.optional* check code efficiency
+    //There are three lines of repeated code i(43~45)n App.js that can be taken out as a seperate component. Not sure if it is worth the time.
 
 10.Write instructions in README file
 

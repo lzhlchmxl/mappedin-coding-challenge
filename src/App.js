@@ -6,7 +6,7 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-const Backgournd = styled.div`
+const Background = styled.div`
   font-family: 'Segoe Ui';
   background: #eee;
   padding: 40px;  
@@ -40,19 +40,19 @@ class App extends Component {
     if (this.state.data === null) {
       welcomeText = 'The data is loading'
       return (
-        <div>
+        <Background>
           <Title>{welcomeText}</Title>
-        </div>
+        </Background>
       )
     } else {
       welcomeText = 'Starred repos for axiomaticdesign'
       return (
-        <Backgournd>
+        <Background>
           <Title>{welcomeText}</Title>
           {this.state.data.map((obj) =>
             <Repo repoData={obj} />
           )}       
-        </Backgournd>
+        </Background>
       )
     }
   }
