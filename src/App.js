@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
 import Repo from './repo.js'
+import styled from 'styled-components'
 
+const Title = styled.h1`
+  text-align: center;
+`;
+
+const Backgournd = styled.div`
+  font-family: 'Segoe Ui';
+  background: #eee;
+  padding: 40px;  
+`;
 
 class App extends Component {
   constructor(props) {
@@ -32,18 +41,18 @@ class App extends Component {
       welcomeText = 'The data is loading'
       return (
         <div>
-          <h1>{welcomeText}</h1>
+          <Title>{welcomeText}</Title>
         </div>
       )
     } else {
       welcomeText = 'Starred repos for axiomaticdesign'
       return (
-        <div>
-          <h1>{welcomeText}</h1>
+        <Backgournd>
+          <Title>{welcomeText}</Title>
           {this.state.data.map((obj) =>
             <Repo repoData={obj} />
           )}       
-        </div>
+        </Backgournd>
       )
     }
   }
