@@ -2,8 +2,9 @@
 
 Instructions:
 1.Clone/Download the repo.
-2.cd to app
-3.run command 'npm start'
+2.cd to repo
+3.run command 'npm install' to install all dependencies
+4.run command 'npm start'
 
 # this is the strategy design to approach the assignment, it also records the progress
 Strategy: // comments include some of the problems that I ran into as well as few thoughts of mine
